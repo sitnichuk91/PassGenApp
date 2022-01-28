@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mainActivityBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:text="@string/generator" />
+
+        <Button
+            android:id="@+id/dictionary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/buttons"
+            android:text="@string/dictionary" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/passResult"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:fontFamily="monospace"
+        android:paddingTop="7dp"
+        android:text="@string/Password"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/passGen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/buttons"
+        android:text="@string/create_password"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/capitalLetters"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/checkbox"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/capital_letters"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/abecedary__1_"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/smallLetters"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/small_letters"
+            android:textSize="20sp"
+            android:background="@drawable/checkbox"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/abecedary"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/numbers"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/numbers"
+            android:textSize="20sp"
+            android:background="@drawable/checkbox"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/email"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/symbols"
+            android:layout_width="500dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/symbols"
+            android:textSize="20sp"
+            android:background="@drawable/checkbox"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            app:srcCompat="@drawable/website"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/passLength"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="@drawable/buttons"
+        android:max="30"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/lengthInfo"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/checkbox"
+        android:elegantTextHeight="false"
+        android:fontFamily="monospace"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="@string/passwordLength"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="#040000"
+        android:textFontWeight="100"
+        android:textSize="18sp" />
+
+</LinearLayout>
